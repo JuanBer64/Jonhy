@@ -1,19 +1,21 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:wght@300&display=swap');
 .inicio{
-    --opacidad-negro: 0.5;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/spider\ fondo.webp");
+    --opacidad-negro: 0.3;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../DreamShaper_v7_Joker_0-_1_.webp");
     background-position: center;
     background-size: cover;
-    height:40rem;  
+    height:43rem;  
     }
-
     .navbar-brand{
-font-family:'raleway',sans-serif;
-font-size:1.3rem;
-color:#ffffff;
+        front-family: 'Releway', sans-serif;
+        font-size: 1.3rem;
+        color:#ffffff;
     }
-
     .nav-link{
-        margin-righ:10px;
-        margin-left:10px;
-        color:#ffffff
+        font-family: 'Comic Neue', cursive;
+        margin-right: 13px;
+        margin-left: 13px;
+        color:#ffffff;
     }
+    
