@@ -1,20 +1,17 @@
-.inicio{
+.inicio {
     --opacidad-negro: 0.5;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/spider\ fondo.webp");
     background-position: center;
     background-size: cover;
-    height:40rem;  
-    }
-
-    .navbar-brand{
-font-family:'raleway',sans-serif;
-font-size:1.3rem;
-color:#fa0505;
-    }
-
-    .nav-link{
-        margin-righ:10px;
-        margin-left:10px;
-        color:#ffffff
-    }
-    
+    height: 40rem;
+}
+.navbar-brand {
+    font-family: 'raleway', sans-serif;
+    font-size: 1.3rem;
+    color: #fa0505;
+}
+.nav-link {
+    margin-righ: 10px;
+    margin-left: 10px;
+    color: #ffffff
+}
