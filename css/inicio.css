@@ -1,6 +1,6 @@
 .inicio {
     --opacidad-negro: 0.6;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/spider\ fondo.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/spider fondo.webp");
     background-position: center;
     background-size: cover;
     height: max-content;
