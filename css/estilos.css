@@ -1,0 +1,140 @@
+.fondo {
+    --opacidad-negro: 0.35;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/IMG_3922.JPG");
+    opacity: initial;
+    background-position: center;
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: red;
+    font-size: 40px;
+}
+
+.menu {
+    color: aliceblue;
+    font-size: 25px;
+    font-family: 'Comic Neue', cursive;
+
+}
+
+.menu:hover {
+    color: red;
+    background: white;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.menu:focus {
+    color: white;
+    background: red;
+
+}
+
+.nav-item {
+    margin-left: 90px;
+    margin-right: 90px;
+
+}
+
+.dropdown-menu {
+    background-color: unset;
+    border-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+
+}
+
+.logo {
+    border-radius: .7cm;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.buscar {
+    margin-right: 50px;
+}
+
+.contacto {
+    align-items: center;
+}
+
+.tarjetas {
+    margin-left: 70px;
+}
+
+.menu2:focus {
+    background-color: red;
+    color: azure;
+
+
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+
+}
+
+
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #e60073;
+    box-shadow:  0 0 20px #e60073 ;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
