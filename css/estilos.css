@@ -1,13 +1,10 @@
 .fondo {
     --opacidad-negro: 0.35;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/IMG_3922.JPG");
-    opacity: initial;
     background-position: center;
     height: 650px;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
+    background-repeat: no-repeat;   
 }
 
 .navbar-brand {
@@ -15,6 +12,8 @@
     color: red;
     font-size: 40px;
 }
+
+
 
 .menu {
     color: aliceblue;
@@ -49,14 +48,15 @@
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block !important;
+    display: block ;
 
 }
 
 .logo {
     border-radius: .7cm;
     margin-left: 20px;
-    margin-top: 10px;
+ 
+    position:absolute;
 }
 
 .buscar {
@@ -83,13 +83,7 @@
 
 
 
-.main {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;    
-}
+
 
 .icon {
     position: relative;
@@ -138,3 +132,46 @@ svg circle {
 .icon:hover circle {
     stroke-dasharray: 220;
 }
+
+.eslogan{ 
+
+    position:absolute;
+    height:200px;
+    width:200px;
+    top: 100px;
+   
+  }
+  .gwen{
+    float: left;
+  }
+ 
+  .contenedorgwen{
+    display: flex;
+    justify-content: left;
+    margin-top: 150px;
+    margin-left: 30px;
+   
+  }
+  .contenedor{
+    display: flex;
+    justify-content: right;
+  }
+  .politicas{
+    position: absolute;
+   text-align: right;
+   color: white;
+font-weight: bolder;
+font-size: 20px;
+  }
+  .formulario{
+    margin-left: 1400px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .main{
+    display: flex;
+    
+  }
+
+
