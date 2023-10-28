@@ -382,14 +382,14 @@ svg circle {
     background: white;
     font-weight: bold;
     font-size: 22px;
-    cursor: url(../IMG//spider1.cur), progress;
+    cursor: url(../IMG//spider1.cur),pointer;
 }
 
 /* Estilo para el texto dentro de .menu:focus */
 .navbar .menu:focus {
     color: white;
     background: red;
-    cursor: url(../IMG//spider2.cur), progress;
+    cursor: url(../IMG//spider2.cur),pointer;
 }
 
 /* Estilo para .nav-item */
