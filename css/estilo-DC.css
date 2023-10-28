@@ -383,14 +383,14 @@ svg circle {
     background: white;
     font-weight: bold;
     font-size: 22px;
-    cursor: url(../IMG/flash2.png), progress;
+    cursor: url(../IMG/flash2.cur), progress;
 }
 
 /* Estilo para el texto dentro de .menu:focus */
 .navbar .menu:focus {
     color: white;
     background: red;
-    cursor: url(../IMG/flash1.png), progress;
+    cursor: url(../img/flash1.cur), progress;
 }
 
 /* Estilo para .nav-item */
