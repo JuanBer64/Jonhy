@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,36 +5,6 @@
 
     list-style: none;
 }
-
-.fondo{
-    background-color: rgba(77, 2, 2, 0.8);
-    color: white;
-
-}
-
-img {
-    max-width: 100%;
-}
-
-.container {
-    max-width: 2000px;
-    margin: 0 auto;
-}
-
-header {
-    --opacidad-negro: 0.4;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/IMG_3922.JPG");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    min-height: 80vh;
-    padding: 80px 0;
-    height: 1000px;
-}
-
-
 .logo {
     border-radius: .7cm;
     margin-left: 12px;
@@ -48,127 +16,6 @@ header {
 .buscar {
     margin-right: 50px;
 }
-
-
-
-
-.header-content {
-    display: flex;
-
-}
-
-.header-txt {
-    background-color: rgba(0, 0, 0, 0.5);
-
-
-}
-
-
-.cuadro {
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.boton {
-    text-align: center;
-}
-
-.header-txt h1 {
-    font-size: 65px;
-    color: rgb(255, 0, 0);
-    line-height: 1.5;
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-.header-txt p {
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 85px;
-    text-align: center;
-}
-
-.btn-1,
-.btn-2,
-.btn-3 {
-    display: inline-block;
-    padding: 11px 35px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 55px;
-    margin-right: 55px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-}
-
-.btn-1:hover {
-    background-color: rgb(255, 0, 0);
-    text-align: center;
-}
-
-.popular {
-    padding: 100px 0;
-
-}
-
-h2 {
-    color: rgb(255, 0, 0);
-    font-size: 45px;
-    margin-bottom: 45px;
-
-}
-
-.popular-content img {
-    width: 3500px;
-}
-
-.product-content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-}
-
-.product-1 {
-    background-color: rgb(119, 2, 2);
-    margin-top: 100px;
-    border: 2px double #000; /* Borde de estilo doble de 2 píxeles en color negro (#000) */
-    border-radius: 10px; /* Radio de 10 píxeles para bordes redondeados */
-    padding: 10px; /
-}
-
-.product-txt {
-    padding: 10px 10px;
-    color: rgb(245, 245, 245);
-}
-
-h3 {
-    font-size: 25px;
-    color: white;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.price p {
-    font-size: 25px;
-    color: rgb(255, 204, 94);
-}
-
-.btn-2 {
-    padding: 5px 25px;
-    background-color: rgb(255, 0, 0);
-    margin-right: 0;
-}
-
-.contact {
-    padding: 150px 300px;
-}
-
 .contact-content {
     background-color: rgb(255, 0, 0);
     text-align: center;
@@ -176,28 +23,7 @@ h3 {
     border-radius: 50px;
 }
 
-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-input {
-    padding: 18px 25px;
-    background-color: rgb(255, 255, 255);
-    border: 0;
-    border-radius: 25px;
-    outline: none;
-    margin-right: 10px;
-    color: rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.btn-3 {
-    background-color: red;
-    cursor: pointer;
-    margin-right: 0;
-}
 
 .footer {
     background-color: orange;
@@ -230,15 +56,6 @@ input {
 .link ul li>a:hover {
     color: red;
 }
-
-.gwen {
-    position: absolute;
-    margin-top: 145px;
-    margin-left: 20px;
-
-}
-
-
 
 
 
@@ -372,7 +189,7 @@ svg circle {
 }
 
 .navbar .menu {
-    color: aliceblue;
+    color: black;
     font-size: 25px;
     font-family: 'Comic Neue', cursive;
 }
@@ -423,4 +240,8 @@ svg circle {
 
 .color {
     background-color: rgba(27, 26, 26, 0.7);
+}
+
+nav{
+    background-color: red;
 }

@@ -8,13 +8,47 @@
   <link rel="stylesheet" href="./css/estilos.css">
   <link rel="stylesheet" href="./aos/aos.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,700&display=swap');
-  </style>
+  <link rel="stylesheet" href="./css/whatsapp-chat-support.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="google-site-verification" content="m0qdTsbUyS4-sTszHNA3nq52adq_s-d6ZEhprue0qm8" />
 </head>
 
-<body style="background-color: rgba(77, 2, 2, 0.8);color: white;">
+<body class="fondo">
+  <!--whats app boton -->
+  <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+    <div class="wcs_button_label">
+            Contáctanos
+        </div>  
+    <div class="wcs_button wcs_button_circle">
+        <span class="bi bi-whatsapp"></span>
+    </div>  
+ 
+    <div class="wcs_popup">
+        <div class="wcs_popup_close">
+            <span class="bi bi-x"></span>
+        </div>
+        <div class="wcs_popup_header">
+            <span class="bi bi-whatsapp"></span>
+            <strong>Servicio al cliente</strong>
+            
+            <div class="wcs_popup_header_description">
+              ¡Saludos! ¿Requieres apoyo? Estoy disponible en WhatsApp para ayudarte en lo que necesites. ¡No dudes en ponerte en contacto! 🕸️🦸‍♀️📞🦸‍♂️🕸️</div>
+
+        </div>  
+        <div class="wcs_popup_input" 
+            data-number="5513660838"
+            data-availability='{ "monday":"07:00-23:59", "tuesday":"07:00-23:59", "wednesday":"07:00-23:59", "thursday":"07:00-23:59", "friday":"07:00-23:59", "saturday":"07:00-23:59", "sunday":"07:00-23:59"}'>
+            <input type="text" placeholder="Escribir pregunta!" />
+            <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="wcs_popup_avatar">
+            <img src="./img/logo.png" alt="Logo Comics City" >
+        </div>
+    </div>
+  </div>
+  <!--Boton de whats app-->
+
   <header>
     <nav class="navbar navbar-expand-lg  fixed-top">
       <div class="container-fluid">
@@ -46,10 +80,21 @@
               <a class="nav-link menu" href="#contacto" style="margin-left: 50px;">contacto</a>
             </li>
           </ul>
-          <form class="d-flex buscar " role="search" style="margin-left: 120px;">
+          <form class="d-flex buscar " role="search" style="margin-left: 0px;">
             <input class="form-control me-2 menu2 " type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
+          <a href="/iniciar sesion.html"><img src="./img/a.png" alt="" style="width: 70px; height: auto;"></a>
+          <a ><img src="./img/pngegg (1).png" alt="" style="width: 70px; height: auto;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              ...
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -247,11 +292,17 @@
       <!-- Copyright -->
     </section>
   </footer>
+  <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./aos/aos.js"></script>
 <script src="./js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
+  <script src="./js/whatsapp-chat-support.js"></script>
+  <script>
+    $('#button-w').whatsappChatSupport({
+      defaultMsg : '' ,
+    })
+  </script>
 </body>
 
 </html>
