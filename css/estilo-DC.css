@@ -1,23 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,700&display=swap');
+
+/* Reset de estilos para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    list-style: none;
 }
 
+
+/* Estilo personalizado para el formulario de búsqueda */
+.my-search-form {
+    margin-left: auto; /* Alinea el formulario a la derecha */
+    max-width: 300px; /* Ajusta el ancho máximo según tu preferencia */
+    width: 100%; /* Hace que el formulario ocupe el 100% del ancho disponible */
+  }
+
+/* Estilos para el cuerpo del documento */
+body {
+    overflow-x: hidden; /* Evita desplazamiento horizontal en dispositivos pequeños */
+}
+.cuadro {
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad 0.1 (ajusta según lo deseado) */
+    padding: 20px; /* Ajusta el espaciado según tus necesidades */
+    border-radius: 10px; /* Ajusta el radio de la esquina según tus necesidades */
+   text-align: center;
+  }
+
+/* Estilos para el fondo */
+.fondo {
+    background-color: rgba(77, 2, 2, 0.8);
+    color: white;
+}
+
+/* Estilos para imágenes */
 img {
     max-width: 100%;
 }
 
+/* Estilos para el contenedor principal */
 .container {
     max-width: 2000px;
     margin: 0 auto;
 }
 
+/* Estilos para el encabezado */
 header {
     --opacidad-negro: 0.4;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/fondo\ DC.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/Fondo_DC.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,56 +57,31 @@ header {
     height: 1000px;
 }
 
-
+/* Estilos para el logo */
 .logo {
     border-radius: .7cm;
     margin-left: 12px;
-
     position: absolute;
 }
 
-
+/* Estilos para la barra de búsqueda */
 .buscar {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
-
-
-
+/* Estilos para el contenido del encabezado */
 .header-content {
     display: flex;
-
 }
 
-.header-txt {
-    background-color: rgba(0, 0, 0, 0.5);
-
-
-}
-
-
+/* Estilos para el cuadro */
 .cuadro {
     margin-left: auto;
     margin-right: auto;
-
 }
 
+/* Estilos para los botones */
 .boton {
-    text-align: center;
-}
-
-.header-txt h1 {
-    font-size: 65px;
-    color: rgb(255, 0, 0);
-    line-height: 1.5;
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-.header-txt p {
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 85px;
     text-align: center;
 }
 
@@ -98,22 +102,22 @@ header {
     text-align: center;
 }
 
+/* Estilos para la sección "Popular" */
 .popular {
     padding: 100px 0;
-
 }
 
 h2 {
     color: rgb(255, 0, 0);
     font-size: 45px;
     margin-bottom: 45px;
-
 }
 
 .popular-content img {
-    width: 3500px;
+    max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
 }
 
+/* Estilos para el contenido de productos */
 .product-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -121,16 +125,16 @@ h2 {
 }
 
 .product-1 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(119, 2, 2);
     margin-top: 100px;
-    border: 2px double #000; /* Borde de estilo doble de 2 píxeles en color negro (#000) */
-    border-radius: 10px; /* Radio de 10 píxeles para bordes redondeados */
-    padding: 10px; /
+    border: 2px double #000;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .product-txt {
     padding: 10px 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(245, 245, 245);
 }
 
 h3 {
@@ -148,15 +152,16 @@ h3 {
 
 .price p {
     font-size: 25px;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 204, 94);
 }
 
 .btn-2 {
     padding: 5px 25px;
-    background-color: rgb(19, 18, 18);
+    background-color: rgb(255, 0, 0);
     margin-right: 0;
 }
 
+/* Estilos para la sección de contacto */
 .contact {
     padding: 150px 300px;
 }
@@ -191,26 +196,22 @@ input {
     margin-right: 0;
 }
 
+/* Estilos para el pie de página */
 .footer {
     background-color: orange;
     text-align: center;
     padding: 10px;
-
     max-width: 100%;
-    /* Establece un ancho máximo para el cuadro */
     height: auto;
-    /* Ajusta la altura automáticamente */
 }
 
+/* Estilos para los enlaces en el pie de página */
 .link ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    /* Permite que los elementos fluyan en varias líneas */
     justify-content: center;
-    /* Centra horizontalmente los elementos */
-
 }
 
 .link ul li>a {
@@ -223,18 +224,15 @@ input {
     color: red;
 }
 
+/* Estilos para la imagen "gwen" */
 .gwen {
     position: absolute;
-    margin-top: 160px;
-    margin-left: 25px;
-    rotate: 12deg;
-
+    margin-top: 145px;
+    margin-left: 20px;
+    transform: rotate(20deg);
 }
 
-
-
-
-
+/* Estilos para los iconos sociales */
 .icon {
     position: relative;
     width: 80px;
@@ -283,14 +281,14 @@ svg circle {
     stroke-dasharray: 220;
 }
 
+/* Estilos para la sección de redes sociales */
 .redes {
     display: flex;
     height: 50px;
-
 }
 
-@media(max-width:991px) {
-
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 991px) {
     .header {
         min-height: 0vh;
         padding: 80px 30px 50px 30px;
@@ -298,8 +296,6 @@ svg circle {
 
     .header-txt {
         text-align: center;
-
-
     }
 
     .header-txt h1 {
@@ -309,8 +305,6 @@ svg circle {
 
     .butons {
         justify-content: center;
-
-
     }
 
     .btn-1:last-of-type {
@@ -356,56 +350,55 @@ svg circle {
     }
 }
 
-@media (max-width: 768px) {
-    .link li {
-        width: 50%;
-        /* Ajusta el ancho de los elementos en pantallas pequeñas */
-        height: auto;
-    }
-}
 
+/* Estilos para la barra de navegación */
 .navbar .menu {
     color: aliceblue;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Comic Neue', cursive;
 }
 
-/* Estilo para el texto de .navbar-brand */
-.navbar .navbar-brand {
+/* Estilos para el texto de .navbar-brand */
+ .navbar-brand {
     font-weight: bold;
     color: red;
-    font-size: 40px;
+    font-size: 22px;
 }
 
-/* Estilo para el texto dentro de .menu:hover */
+/* Estilos para .navbar .menu:hover */
 .navbar .menu:hover {
     color: red;
     background: white;
     font-weight: bold;
     font-size: 22px;
-    cursor: url(../IMG/flash2.cur), pointer;
+    cursor: url(../IMG//flash2.cur), pointer;
 }
 
-/* Estilo para el texto dentro de .menu:focus */
+/* Estilos para .navbar .menu:focus */
 .navbar .menu:focus {
     color: white;
     background: red;
-    cursor: url(../img/flash1.cur), pointer;
+    cursor: url(../IMG//flash1.cur), pointer;
 }
 
-/* Estilo para .nav-item */
+/* Estilos para .navbar .nav-item */
 .navbar .nav-item {
     margin-left: 90px;
-    margin-right: 90px;
+    margin-right: 50px;
 }
 
-/* Estilo para .dropdown-menu */
+/* Estilos para .iconos_navbar */
+.iconos_navbar {
+    margin-inline-start: 30px;
+}
+
+/* Estilos para .navbar .dropdown-menu */
 .navbar .dropdown-menu {
     background-color: unset;
     border-style: none;
 }
 
-/* Estilo para .menu2:focus */
+/* Estilos para .navbar .menu2:focus */
 .navbar .menu2:focus {
     background-color: red;
     color: azure;
@@ -413,6 +406,7 @@ svg circle {
     font-weight: bold;
 }
 
+/* Estilos para la sección de color */
 .color {
     background-color: rgba(27, 26, 26, 0.7);
 }
