@@ -254,11 +254,6 @@ input {
 }
 
 .icon:hover:nth-child(3) {
-    background-color: #25d366;
-    box-shadow: 0 0 20px #25d366;
-}
-
-.icon:hover:nth-child(4) {
     background-color: #1da1f2;
     box-shadow: 0 0 20px #1da1f2;
 }
