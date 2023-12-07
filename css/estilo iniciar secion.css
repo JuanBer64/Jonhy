@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.logo {
+    border-radius: .7cm;
+    margin-left: 12px;
+    position: absolute;
+}
+.buscar {
+    margin-right: 50px;
+}
+.contact-content {
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+.footer {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+
+    max-width: 100%;
+    /* Establece un ancho máximo para el cuadro */
+    height: auto;
+    /* Ajusta la altura automáticamente */
+}
+.link ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos fluyan en varias líneas */
+    justify-content: center;
+    /* Centra horizontalmente los elementos */
+}
+.link ul li>a {
+    font-size: 17px;
+    color: black;
+    margin-right: 20px;
+}
+.link ul li>a:hover {
+    color: red;
+}
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+.icon:hover {
+    background-color: #e60073;
+    box-shadow: 0 0 20px #e60073;
+}
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366;
+}
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2;
+}
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+}
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+.redes {
+    display: flex;
+    height: 50px;
+}
+@media(max-width:991px) {
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+    .header-txt {
+        text-align: center;
+    }
+    .header-txt h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .butons {
+        justify-content: center;
+    }
+    .btn-1:last-of-type {
+        margin-right: 0;
+    }
+    .popular {
+        display: none;
+    }
+    .product {
+        padding: 30px;
+    }
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .product-1 img {
+        width: 100%;
+    }
+    .contact {
+        padding: 30px;
+    }
+    form {
+        flex-direction: column;
+    }
+    input {
+        margin: 0 0 20px 0;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .link ul {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .link li {
+        width: 50%;
+        /* Ajusta el ancho de los elementos en pantallas pequeñas */
+        height: auto;
+    }
+}
+.navbar .menu {
+    color: black;
+    font-size: 25px;
+    font-family: 'Comic Neue', cursive;
+}
+/* Estilo para el texto de .navbar-brand */
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: red;
+    font-size: 40px;
+}
+/* Estilo para el texto dentro de .menu:hover */
+.navbar .menu:hover {
+    color: red;
+    background: white;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: url(../IMG//spider1.cur), pointer;
+}
+/* Estilo para el texto dentro de .menu:focus */
+.navbar .menu:focus {
+    color: white;
+    background: red;
+    cursor: url(../IMG//spider2.cur), pointer;
+}
+/* Estilo para .nav-item */
+.navbar .nav-item {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+/* Estilo para .dropdown-menu */
+.navbar .dropdown-menu {
+    background-color: unset;
+    border-style: none;
+}
+/* Estilo para .menu2:focus */
+.navbar .menu2:focus {
+    background-color: red;
+    color: azure;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+.color {
+    background-color: rgba(27, 26, 26, 0.7);
+}
+nav {
+    background-color: red;
+}

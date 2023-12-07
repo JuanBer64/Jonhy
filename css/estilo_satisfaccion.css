@@ -1,0 +1,62 @@
+body {
+    --opacidad-negro: 0.6;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/FondoMarvel.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo {
+    color: red;
+    text-shadow: 2px 2px 4px rgba(247, 245, 245, 0.5);
+}
+.info {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(218, 226, 226);
+    word-spacing: 0.9rem;
+    text-shadow: 2px 2px 4px rgba(248, 0, 0, 0.5);
+}
+header {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+/* Estilos para el pie de página */
+.footer {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos para los enlaces en el pie de página */
+.link ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.link ul li>a {
+    font-size: 17px;
+    color: black;
+    margin-right: 20px;
+}
+.link ul li>a:hover {
+    color: red;
+}
+/* Estilos para la sección de redes sociales en el footer */
+.redes {
+    display: flex;
+    height: 50px;
+}
+/* Estilos para pantallas más pequeñas en el footer */
+@media (max-width: 991px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .link ul {
+        margin-top: 20px;
+    }
+}
