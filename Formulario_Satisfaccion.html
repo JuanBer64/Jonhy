@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo_satisfaccion.css">
+    <link rel="stylesheet" href="./aos/aos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <p>
+        <h1 class="titulo">Evaluanos </h1>
+        </p>
+    </header>
+    <main>
+        <section class="inicio">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="info">Bienvenido a esta Encuesta , parte del programa de Mejora y seguimiento al
+                            servicio de Ayuda
+                            al cliente , !Permitenos saber tu opinion respecto al servicio presentado dentro de nuestro
+                            sitio !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center py-5">
+            <a href="javascript:void(0);" onclick="abrirFormulario();" class="btn btn-info btn-lg">Inicio</a>
+        </div>
+        <script>
+            function abrirFormulario() {
+                var url = "https://docs.google.com/forms/d/e/1FAIpQLSe4V7pbZPvwZx3a1kAfhkgRbFwBarhHdIf6xowbm4ahT6BMbg/viewform?embedded=true";
+                window.open(url, "_blank", "width=600,height=600");
+            }
+        </script>
+    </main>
+    <footer>
+        <div class="footer " id="contacto" style="background-color: orange;">
+            <div class="link">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="./politicas.html">Políticas de Privacidad</a></li>
+                    <li> <a href="#">Evaluanos </a>
+            </div>
+            </li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright: Comics City
+            <p>by : <a class="text-white" href="https://usb.edu.mx/"> Universidad Simon Bolivar</a></p>
+        </div>
+        <!-- Copyright -->
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./aos/aos.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
